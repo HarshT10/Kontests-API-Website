@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <script defer src="https://use.fontawesome.com/releases/v6.1.2/js/all.js"
+        integrity="sha384-11X1bEJVFeFtn94r1jlvSC7tlJkV2VJctorjswdLzqOJ6ZvYBSZQkaQVXG0R4Flt"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Contests Page -->
+    <link rel="stylesheet" href="contests.html">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'lato': ['Lato', 'sans-serif'],
+                },
+                extend: {
+                    colors: {
+                        darkBlue: '#0F2329',
+                    },
+                }
+            }
+        }
+    </script>
+
+    <title>Coding Contests</title>
+</head>
+
+<body class="bg-cyan-700 font-[lato] relative xl:h-screen">
+
+    <!-- Header Starts Here -->
+    <header>
+        <nav class="bg-darkBlue px-3 sm:px-5 2xl:px-0">
+            <div class="max-w-[1440px] mx-auto py-5 flex items-center justify-between relative">
+                <a href="/index.html" class="navbar-brand">
+                    <h1 class="lg:text-3xl sm:text-2xl text-xl font-bold text-cyan-400 cursor-pointer">Coder Contest
+                    </h1>
+                </a>
+                <div>
+                    <ul
+                        class="nav-menu flex-col lg:flex lg:flex-row lg:static absolute right-0 top-[70px]   md:gap-10 lg:bg-darkBlue bg-[#0DCAF0] lg:w-full w-[15rem] rounded-md lg:text-white text-black">
+                        <a href="/index.html">
+                            <li
+                                class="lg:py-0 lg:px-0 py-8 px-4 font-semibold lg:transition-colors lg:ease-in cursor-pointer lg:bg-transparent hover:text-[#0DCAF0] hover:bg-darkBlue">
+                                Home
+                            </li>
+                        </a>
+                        <a href="/contests.html">
+                            <li
+                                class="lg:py-0 lg:px-0 py-8 px-4 font-semibold  lg:ease-in lg:transition-colors cursor-pointer lg:bg-transparent hover:text-[#0DCAF0] hover:bg-darkBlue">
+                                Contests
+                            </li>
+                        </a>
+                        <div class="dropdown relative box-border font-semibold cursor-pointer">
+                            <div
+                                class="nav-item lg:py-0 lg:px-0 py-8 px-4 select flex lg:justify-between items-center gap-4 lg:ease-in lg:transition-colors lg:bg-transparent hover:text-[#0DCAF0] hover:bg-darkBlue">
+                                <p class="selected">
+                                    Socials
+                                <div class="caret"></div>
+                                </p>
+                            </div>
+                            <ul
+                                class="dropdown-menu absolute bg-[#0DCAF0] rounded-lg w-100 xl:top-12 lg:top-10 right-0 text-black">
+                                <a href="https://www.instagram.com/harsh__codes/" target="_blank">
+                                    <li
+                                        class="py-2 px-4 flex justify-between items-center gap-10 hover:bg-[#0F2329] hover:text-[#0DCAF0]">
+                                        Instagram
+                                        <i class="fa-brands fa-instagram">
+                                        </i>
+                                    </li>
+                                </a>
+                                <a href="https://www.linkedin.com/in/harsh-thakkar1011/" target="_blank">
+                                    <li
+                                        class="py-2 px-4 flex justify-between items-center gap-10 hover:bg-[#0F2329] hover:text-[#0DCAF0]">
+                                        LinkedIn
+                                        <i class="fa-brands fa-linkedin-in">
+                                        </i>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+                <div class="bar lg:hidden  text-white">
+                    <a href="#" class="material-symbols-outlined leading-relaxed sm:text-4xl text-3xl">
+                        menu
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Ends Here -->
+
+    <!-- Textbox Starts Here -->
+    <section class="max-w-[1440px] mx-auto xl:my-[7rem] my-5 xl:py-0 py-5 px-3 sm:px-5 2xl:px-0">
+        <div
+            class="bg-center lg:bg-top text-box px-[1.5rem] my-5 py-5 rounded-lg flex flex-col xl:flex-row lg:justify-around lg:items-center md:p-[3rem] lg:py-[3rem] xl:py-[4rem]">
+            <div class="text-white py-5 xl:w-1/2">
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl xl:text-6xl text-[#0DCAF0] font-semibold pb-3 lg:pb-5">
+                    Hello,
+                    Coders!</h1>
+                <p class="text-lg sm:text-3xl lg:text-4xl xl:text-4xl pb-3 font-semibold lg:pb-5">Welcome to Coding
+                    Contests!
+                </p>
+                <p class="text-base sm:text-xl lg:text-2xl xl:text-2xl pb-3 lg:pb-5">Coding Competitions are meant to
+                    enthrall,
+                    challenge,
+                    and test coders around the world. Try your hand at
+                    one, or all of them.</p>
+                <a href="" class="">
+                    <button
+                        class="bg-[#0DCAF0] hover:bg-darkBlue transition ease-in text-white font-semibold rounded-lg my-3 px-3 py-2 md:p-3 lg:px-4 sm:text-base lg:text-lg">
+                        Take me there!
+                    </button></a>
+            </div>
+            <div class="py-5 mx-auto lg:mx-0 xl:py-0">
+                <img src="/images/developer-team.png" class="w-[30rem]" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Textbox Ends Here -->
+
+
+    <!-- Footer Starts Here -->
+    <footer class="bg-darkBlue px-3 sm:px-5 2xl:px-0 xl:absolute xl:bottom-0 xl:w-full xl:h-auto">
+        <div class="max-w-[1440px] mx-auto py-5 flex gap-2 justify-center text-white">
+            <p class="text-sm sm:text-base">© 2022 Copyright |</p>
+            <a class="text-sm sm:text-base underline decoration-1 text-[#0DCAF0]" href="https://harshcodes.netlify.app/"
+                target="_blank">Harsh
+                Thakkar</a>
+        </div>
+    </footer>
+    <!-- Footer Starts Here -->
+
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
