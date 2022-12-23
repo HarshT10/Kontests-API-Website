@@ -2,6 +2,10 @@
 
 - I searched for a Public API on google and found this API called 'Kontests API'. I made this website and I'm fetching the data directly from the API.
 
+[Netlify](https://kontestsapi-harshcodes.netlify.app/)
+
+![Badge](https://img.shields.io/badge/Netlify-Link-green)
+
 ---
 
 ## What did I learn from this Project?
