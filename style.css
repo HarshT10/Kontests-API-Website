@@ -37,7 +37,7 @@
 }
 
 .text-box {
-    background: rgba(0, 0, 0, 0.85) url("/images/coding-man.jpg");
+    background: rgba(0, 0, 0, 0.8) url("/images/coding-man.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: darken;
