@@ -66,11 +66,11 @@ response.then((v) => {
                     <div class="card rounded-b-lg shadow-lg shadow-slate-900">
                         <img src=${image} class="w-full h-auto sm:h-[190px] lg:h-[170px]"
                         alt="Site Logo">
-                        <div class="py-5 px-4 bg-[#FC9918] rounded-b-lg">
+                        <div class="py-5 px-4 bg-white rounded-b-lg">
                             <h5 class="contest-title text-xl md:text-xl font-bold mb-1">${title}</h5 >
                             <p class="contest-site text-sm md:text-lg lg:text-base font-semibold"> Contest Organizer: ${contests[item].site}</p>
-                            <p class="contest-start text-white text-xs md:text-sm font-bold my-3"> Starts at ${contests[item].start_time}</p>
-                            <p class="contest-end text-white text-xs md:text-sm font-bold mb-2"> Ends at ${contests[item].end_time}</p>
+                            <p class="contest-start text-red-600 text-xs md:text-sm font-bold my-3"> Starts at ${contests[item].start_time}</p>
+                            <p class="contest-end text-red-600 text-xs md:text-sm font-bold mb-2"> Ends at ${contests[item].end_time}</p>
                             <p class="contest-status text-sm font-semibold mt-3"> Status: ${contests[item].status}</p>
                             <div class="mt-2 py-1" >
                                 <a href="${contests[item].url}" target="_blank" class="contest-url bg-[#0DCAF0] hover:bg-[#4ca2f1] transition ease-in text-white font-semibold text-sm py-2 px-3 rounded-lg hover:shadow-sm hover:shadow-slate-900">Visit Contest</a>
