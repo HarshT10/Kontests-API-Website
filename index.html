@@ -13,7 +13,9 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- FontAwesome -->
     <script defer src="https://use.fontawesome.com/releases/v6.1.2/js/all.js"
@@ -33,6 +35,7 @@
         tailwind.config = {
             theme: {
                 fontFamily: {
+                    'poppins': ['Poppins', 'sans-serif'],
                     'lato': ['Lato', 'sans-serif'],
                 },
                 extend: {
@@ -59,7 +62,7 @@
                 </a>
                 <div>
                     <ul
-                        class="nav-menu flex-col lg:flex lg:flex-row lg:static absolute right-0 top-[70px]   md:gap-10 lg:bg-darkBlue bg-[#0DCAF0] lg:w-full w-[15rem] rounded-md lg:text-white text-black">
+                        class="nav-menu flex-col lg:flex lg:flex-row lg:static fixed right-0 top-[70px] md:gap-10 lg:bg-darkBlue bg-[#0DCAF0] lg:w-full w-[15rem] rounded-md lg:text-white text-black">
                         <a href="/index.html">
                             <li
                                 class="lg:py-0 lg:px-0 py-8 px-4 font-semibold lg:transition-colors lg:ease-in cursor-pointer lg:bg-transparent hover:text-[#0DCAF0] hover:bg-darkBlue">
@@ -68,7 +71,7 @@
                         </a>
                         <a href="/contests.html">
                             <li
-                                class="lg:py-0 lg:px-0 py-8 px-4 font-semibold  lg:ease-in lg:transition-colors cursor-pointer lg:bg-transparent hover:text-[#0DCAF0] hover:bg-darkBlue">
+                                class="lg:py-0 lg:px-0 py-8 px-4 font-semibold lg:ease-in lg:transition-colors cursor-pointer lg:bg-transparent hover:text-[#0DCAF0] hover:bg-darkBlue">
                                 Contests
                             </li>
                         </a>
@@ -113,26 +116,30 @@
     <!-- Header Ends Here -->
 
     <!-- Textbox Starts Here -->
-    <section class="max-w-[1440px] mx-auto xl:my-[7rem] my-5 xl:py-0 py-5 px-3 sm:px-5 2xl:px-0">
+    <section class="max-w-[1440px] mx-auto font-[poppins] xl:my-0 my-5 xl:py-0 py-5 px-3 sm:px-5 2xl:px-0">
         <div
-            class="bg-center lg:bg-top text-box px-[1.5rem] my-5 py-5 rounded-lg flex flex-col xl:flex-row lg:justify-around lg:items-center md:p-[3rem] lg:py-[3rem] xl:py-[4rem]">
+            class="bg-center lg:bg-top text-box px-[1.5rem] my-5 py-5 rounded-lg flex flex-col xl:flex-row lg:justify-around lg:items-center md:p-[3rem] lg:py-[3rem] xl:py-[2rem] xl:w-[75%] xl:absolute xl:top-1/2 xl:left-1/2 xl:translate-y-[-50%] xl:translate-x-[-50%] shadow-xl shadow-slate-900">
             <div class="text-white py-5 xl:w-1/2">
-                <h1 class="text-3xl sm:text-5xl lg:text-6xl xl:text-6xl text-[#0DCAF0] font-semibold pb-3 lg:pb-5">
-                    Hello,
-                    Coders!</h1>
-                <p class="text-lg sm:text-3xl lg:text-4xl xl:text-4xl pb-3 font-semibold lg:pb-5">Welcome to Coding
-                    Contests!
-                </p>
-                <p class="text-base sm:text-xl lg:text-2xl xl:text-2xl pb-3 lg:pb-5">Coding Competitions are meant to
-                    enthrall,
-                    challenge,
-                    and test coders around the world. Try your hand at
-                    one, or all of them.</p>
-                <a href="" class="">
-                    <button
-                        class="bg-[#0DCAF0] hover:bg-darkBlue transition ease-in text-white font-semibold rounded-lg my-3 px-3 py-2 md:p-3 lg:px-4 sm:text-base lg:text-lg">
-                        Take me there!
-                    </button></a>
+                <h1 class="text-3xl sm:text-4xl lg:text-6xl xl:text-5xl text-[#0DCAF0] font-semibold pb-3 lg:pb-5">
+                    <h1
+                        class="text-3xl sm:text-5xl lg:text-5xl xl:text-4xl 2xl:text-5xl text-[#0DCAF0] font-semibold pb-3 lg:pb-5">
+                        Hello,
+                        Coders!</h1>
+                    <p class="text-lg sm:text-3xl lg:text-4xl xl:text-3xl 2xl:text-4xl pb-3 font-semibold lg:pb-5">
+                        Welcome to Coding
+                        Contests!
+                    </p>
+                    <p class="text-sm sm:text-lg lg:text-2xl xl:text-xl pb-3 lg:pb-5">Coding Competitions
+                        are meant to
+                        enthrall,
+                        challenge,
+                        and test coders around the world. Try your hand at
+                        one, or all of them.</p>
+                    <a href="/contests.html" target="_blank">
+                        <button
+                            class="bg-[#0DCAF0] hover:bg-[#4fd6f1] transition-all ease-in text-white md:font-semibold rounded-lg my-3 2xl:my-1 px-3 py-2 md:p-3 md:px-4 lg:px-5 text-sm sm:text-base lg:text-lg xl:text-base hover:translate-y-[-5%] hover:shadow-md hover:shadow-slate-900">
+                            Take me there!
+                        </button></a>
             </div>
             <div class="py-5 mx-auto lg:mx-0 xl:py-0">
                 <img src="/images/developer-team.png" class="w-[30rem]" alt="">

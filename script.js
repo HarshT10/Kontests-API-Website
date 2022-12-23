@@ -63,17 +63,17 @@ response.then((v) => {
         }
 
         ihtml += `
-                    <div class="card p-0 m-4" style="width: 20rem; height: 25.5rem;">
-                        <img src=${image} class="card-img-top card-image"
+                    <div class="card">
+                        <img src=${image} class="w-full h-auto sm:h-[190px] lg:h-[170px]"
                         alt="Site Logo">
-                        <div class="card-body px-3 m-0">
-                            <h5 class="card-title m-0 fw-bolder">${title}</h5 >
-                            <p class="fw-bold mt-2"> Contest Organizer: ${contests[item].site}</p>
-                            <p class="card-text m-0 text-danger fw-bold"> Starts at ${contests[item].start_time}</p>
-                            <p class="card-text mt-2 text-danger fw-bold"> Ends at ${contests[item].end_time}</p>
-                            <p class="card-text mb-2 fs-8 status"> Status: ${contests[item].status}</p>
-                            <div class="d-grid gap-2">
-                                <a href="${contests[item].url}" target="_blank" class="btn btn-info text-white m-0 fw-semibold">Visit Contest</a>
+                        <div class="py-5 px-4 bg-[#DFF6FF] rounded-b-lg">
+                            <h5 class="contest-title text-xl md:text-xl font-bold mb-1">${title}</h5 >
+                            <p class="contest-site text-sm md:text-lg lg:text-base font-semibold"> Contest Organizer: ${contests[item].site}</p>
+                            <p class="contest-start text-red-600 text-xs md:text-sm font-bold my-3"> Starts at ${contests[item].start_time}</p>
+                            <p class="contest-end text-red-600 text-xs md:text-sm font-bold mb-2"> Ends at ${contests[item].end_time}</p>
+                            <p class="contest-status text-sm font-semibold mt-3"> Status: ${contests[item].status}</p>
+                            <div class="mt-2 py-1" >
+                                <a href="${contests[item].url}" target="_blank" class="contest-url bg-[#0DCAF0] hover:bg-[#4fd6f1] transition ease-in text-white font-semibold text-sm py-2 px-3 rounded-lg">Visit Contest</a>
                             </div>
                         </div >
                     </div >
